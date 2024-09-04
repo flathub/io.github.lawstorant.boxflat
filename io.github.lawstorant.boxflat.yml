@@ -13,7 +13,7 @@ finish-args:
   - --device=all
 
 modules:
-  - python3-modules.yaml
+  - python3-requirements.yaml
 
   - name: boxflat
     buildsystem: simple
@@ -35,5 +35,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.15.0-1
-        commit: 723840ed5cd7dee72203bc835d51a0d877e17422
+        tag: v1.16.0
+        commit: 67a5053b20bc53a144fbe097bd4bc15a882767de
