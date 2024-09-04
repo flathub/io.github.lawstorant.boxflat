@@ -13,7 +13,7 @@ finish-args:
   - --device=all
 
 modules:
-  - python3-modules.yaml
+  - python3-requirements.yaml
 
   - name: boxflat
     buildsystem: simple
