@@ -35,5 +35,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.16.3
-        commit: 3954f3645577962321dfef0b97bc3a4c4016ed46
+        tag: v1.16.4
+        commit: 597199b299b58ef556399dd50bc35d0f99a5b61c
