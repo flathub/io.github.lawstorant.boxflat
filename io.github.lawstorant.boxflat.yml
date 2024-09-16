@@ -11,6 +11,8 @@ finish-args:
   - --share=ipc
   # Access to serial devices
   - --device=all
+  # Persistent storage of configuraiton
+  - --persist=.config
 
 modules:
   - python3-requirements.yaml
@@ -35,5 +37,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.16.4
-        commit: 597199b299b58ef556399dd50bc35d0f99a5b61c
+        tag: v1.17.0
+        commit: 3354868e97ddee01269afd8609826e2c64c9b173
