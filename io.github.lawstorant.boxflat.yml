@@ -1,6 +1,6 @@
 id: io.github.lawstorant.boxflat
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 command: boxflat
 finish-args:
@@ -37,5 +37,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.17.4
-        commit: f8c93347248dff774386fd3a3e89251f19f54d63
+        tag: v1.18.0
+        commit: 5cbeb861dfcebfa1fa9704445d42235eafd8845a
