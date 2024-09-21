@@ -37,4 +37,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        branch: update-dependencies
+        tag: v1.18.0
+        commit: asd
