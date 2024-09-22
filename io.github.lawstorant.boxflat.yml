@@ -37,5 +37,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.18.1
-        commit: e76ee0ace5fe6d6bd25ac23acb5499d564391652
+        branch: 21-moza-es-wheel-no-longer-connecting-continued
