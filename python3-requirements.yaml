@@ -29,4 +29,13 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz
         sha256: d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e
+  - name: python3-psutil
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "psutil==6.1.0" --no-build-isolation
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/26/10/2a30b13c61e7cf937f4adf90710776b7918ed0a9c434e2c38224732af310/psutil-6.1.0.tar.gz
+        sha256: 353815f59a7f64cdaca1c0307ee13558a0512f6db064e92fe833784f08539c7a
 name: python3-requirements
