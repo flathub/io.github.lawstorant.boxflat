@@ -31,6 +31,7 @@ modules:
       - cp -r boxflat /app/share/boxflat/
       - cp -r data /app/share/boxflat/
       - cp -r udev /app/share/boxflat/
+      
       - cp entrypoint.py /app/share/boxflat/
       - echo $(cat data/version)-flatpak > /app/share/boxflat/data/version
 
