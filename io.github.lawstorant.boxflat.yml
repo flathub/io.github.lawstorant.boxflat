@@ -1,4 +1,4 @@
-id: io.github.lawstorant.boxflat
+  \id: io.github.lawstorant.boxflat
 runtime: org.gnome.Platform
 runtime-version: '47'
 sdk: org.gnome.Sdk
@@ -40,5 +40,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: flatpak-test
-        commit: 0629bfa9b75ceb89bdce9b74744c2c59696ceecd
+        tag: v1.22.1
+        commit: b733f5e81a077743db07da764f894548c313d079
