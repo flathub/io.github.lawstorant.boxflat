@@ -13,6 +13,9 @@ finish-args:
   - --device=all
   # Persistent storage of configuraiton
   - --persist=.config
+  # Talk to flatpak to allow process listing for
+  # automatic per-game preset loading
+  - --talk-name=org.freedesktop.Flatpak
 
 modules:
   - python3-requirements.yaml
@@ -37,5 +40,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.22.0
-        commit: 21615a793601b956573e7b0845a021b59b8ade94
+        tag: flatpak-test
+        commit: 0629bfa9b75ceb89bdce9b74744c2c59696ceecd
