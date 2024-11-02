@@ -20,6 +20,22 @@ finish-args:
 modules:
   - python3-requirements.yaml
 
+  - name: libportal
+    buildsystem: meson
+    config-opts:
+      - "-Ddocs=false"
+      - "-Dvapi=false"
+      - "-Dtests=false"
+      - "-Dportal-tests=false"
+      - "-Dbackend-gtk3=disabled"
+      - "-Dbackend-gtk4=enabled"
+      - "-Dbackend-qt5=disabled"
+      - "-Dbackend-qt6=disabled"
+    sources:
+      - type: archive
+        url: https://github.com/flatpak/libportal/releases/download/0.8.1/libportal-0.8.1.tar.xz
+        sha256: 281e54e4f8561125a65d20658f1462ab932b2b1258c376fed2137718441825ac
+
   - name: boxflat
     buildsystem: simple
     build-commands:
@@ -31,7 +47,7 @@ modules:
       - cp -r boxflat /app/share/boxflat/
       - cp -r data /app/share/boxflat/
       - cp -r udev /app/share/boxflat/
-      
+
       - cp entrypoint.py /app/share/boxflat/
       - echo $(cat data/version)-flatpak > /app/share/boxflat/data/version
 
@@ -41,5 +57,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.22.3
-        commit: f48623e9461c96ee8610fc3534ec699aa1624e2d
+        tag: v1.23.0
+        commit:
