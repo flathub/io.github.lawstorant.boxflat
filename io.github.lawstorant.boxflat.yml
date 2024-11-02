@@ -57,5 +57,4 @@ modules:
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.23.0
-        commit:
+        branch: notifications
