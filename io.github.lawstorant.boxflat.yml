@@ -16,6 +16,9 @@ finish-args:
   # Talk to flatpak to allow process listing for
   # automatic per-game preset loading
   - --talk-name=org.freedesktop.Flatpak
+  # Tray icon support
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --talk-name=com.canonical.indicator.application
 
 modules:
   - python3-requirements.yaml
