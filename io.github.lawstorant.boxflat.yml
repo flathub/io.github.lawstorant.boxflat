@@ -52,7 +52,7 @@ modules:
       - echo $(cat data/version)-flatpak > /app/share/boxflat/data/version
 
       - mkdir -p /app/share/icons/hicolor
-      - cp -r icons/* /app/share/icons/hicolor/
+      - cp -r icons/* /app/share/icons/hicolor/ 
 
     sources:
       - type: git
