@@ -16,6 +16,8 @@ finish-args:
   # Talk to flatpak to allow process listing for
   # automatic per-game preset loading
   - --talk-name=org.freedesktop.Flatpak
+  # Tray icon support
+  - --talk-name=org.kde.StatusNotifierWatcher
 
 modules:
   - python3-requirements.yaml
@@ -57,10 +59,11 @@ modules:
       - echo $(cat data/version)-flatpak > /app/share/boxflat/data/version
 
       - mkdir -p /app/share/icons/hicolor
-      - cp -r icons/* /app/share/icons/hicolor/ 
+      - cp -r icons/* /app/share/icons/hicolor/
 
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
-        tag: v1.35.5
-        commit: 451c1a6ccadde5d069a1b61c75bc73768924788c
+        tag: v1.36.0-1
+        commit: 208f75705328ee7eccb44e117554675328026f00
+
