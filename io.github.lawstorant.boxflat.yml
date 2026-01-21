@@ -59,11 +59,11 @@ modules:
       - echo $(cat data/version)-flatpak > /app/share/boxflat/data/version
 
       - mkdir -p /app/share/icons/hicolor
-      - cp -r icons/* /app/share/icons/hicolor/
+      - cp -r icons/* /app/share/icons/hicolor/ 
 
     sources:
       - type: git
         url: https://github.com/Lawstorant/boxflat
         tag: v1.36.0
         commit: 75d5c508dafc0c12bdfd1d4a2249535abce8b339
-
+        
