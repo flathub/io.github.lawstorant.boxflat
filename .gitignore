@@ -1,3 +1,5 @@
 /.flatpak-builder
 /app
 /boxflat
+export
+*.flatpak
