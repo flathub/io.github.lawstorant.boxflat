@@ -38,6 +38,11 @@ modules:
       - type: file
         url: https://files.pythonhosted.org/packages/26/10/2a30b13c61e7cf937f4adf90710776b7918ed0a9c434e2c38224732af310/psutil-6.1.0.tar.gz
         sha256: 353815f59a7f64cdaca1c0307ee13558a0512f6db064e92fe833784f08539c7a
+  - name: python3-pyproject-metadata
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "pyproject-metadata==0.10.0" --no-build-isolation
   - name: python3-meson-python
     buildsystem: simple
     build-commands:
@@ -45,8 +50,8 @@ modules:
         --prefix=${FLATPAK_DEST} "meson-python==0.19.0" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/16/7f/d1b0c65b267a1463d752b324f11d3470e30889daefc4b9ec83029bfa30b5/meson_python-0.19.0-py3-none-any.whl
-        sha256: 67b5906c37404396d23c195e12c8825506074460d4a2e7083266b845d14f0298
+        url: https://files.pythonhosted.org/packages/c0/57/e69a1de45ec7a99a707e9f1a5defa035a48de0cae2d8582451c72d2db456/pyproject_metadata-0.10.0-py3-none-any.whl
+        sha256: b1e439a9f7560f9792ee5975dcf5e89d2510b1fc84a922d7e5d665aa9102d966
   - name: python3-dbus-python
     buildsystem: simple
     build-commands:
