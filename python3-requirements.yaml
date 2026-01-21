@@ -41,19 +41,19 @@ modules:
   - name: python3-dbus-python
     buildsystem: simple
     build-commands:
-    - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-      --prefix=${FLATPAK_DEST} "dbus-python==1.4.0" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "dbus-python==1.4.0" --no-build-isolation
     sources:
-      type: file
-      url: https://files.pythonhosted.org/packages/ff/24/63118050c7dd7be04b1ccd60eab53fef00abe844442e1b6dec92dae505d6/dbus-python-1.4.0.tar.gz
-      sha256: 991666e498f60dbf3e49b8b7678f5559b8a65034fdf61aae62cdecdb7d89c770
+        type: file
+        url: https://files.pythonhosted.org/packages/ff/24/63118050c7dd7be04b1ccd60eab53fef00abe844442e1b6dec92dae505d6/dbus-python-1.4.0.tar.gz
+        sha256: 991666e498f60dbf3e49b8b7678f5559b8a65034fdf61aae62cdecdb7d89c770
   - name: python3-trayer
     buildsystem: simple
     build-commands:
-    - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-      --prefix=${FLATPAK_DEST} "trayer==0.1.1" --no-build-isolation
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
+        --prefix=${FLATPAK_DEST} "trayer==0.1.1" --no-build-isolation
     sources:
-    - type: file
-      url: https://files.pythonhosted.org/packages/26/44/7cca0538a40a1186b9b4240603526f4c0d4a6cd75995b2f98ee43d67abf0/trayer-0.1.1-py3-none-any.whl
-      sha256: 7b511a51ba1c08c5653bdbb91f008cb7dbba105ee5364ff831a20872fdb101de
+      - type: file
+        url: https://files.pythonhosted.org/packages/26/44/7cca0538a40a1186b9b4240603526f4c0d4a6cd75995b2f98ee43d67abf0/trayer-0.1.1-py3-none-any.whl
+        sha256: 7b511a51ba1c08c5653bdbb91f008cb7dbba105ee5364ff831a20872fdb101de
 name: python3-requirements
