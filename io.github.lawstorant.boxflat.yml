@@ -25,18 +25,18 @@ modules:
   - name: libportal
     buildsystem: meson
     config-opts:
-      - "-Ddocs=false"
-      - "-Dvapi=false"
-      - "-Dtests=false"
-      - "-Dportal-tests=false"
-      - "-Dbackend-gtk3=disabled"
-      - "-Dbackend-gtk4=enabled"
-      - "-Dbackend-qt5=disabled"
-      - "-Dbackend-qt6=disabled"
+      - -Ddocs=false
+      - -Dvapi=false
+      - -Dtests=false
+      - -Dportal-tests=false
+      - -Dbackend-gtk3=disabled
+      - -Dbackend-gtk4=enabled
+      - -Dbackend-qt5=disabled
+      - -Dbackend-qt6=disabled
     sources:
       - type: archive
-        url: https://github.com/flatpak/libportal/archive/0.9.1.tar.gz
-        sha256: ea422b789ae487e04194d387bea031fd7485bf88a18aef8c767f7d1c29496a4e
+        url: https://github.com/flatpak/libportal/archive/0.10.0.tar.gz
+        sha256: e1b6913c6d9015bfa918ace86f82c30940982add97aed9c18cc929c5327054fd
         x-checker-data:
           type: anitya
           project-id: 230124
