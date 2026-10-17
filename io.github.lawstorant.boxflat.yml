@@ -22,27 +22,6 @@ finish-args:
 modules:
   - python3-requirements.yaml
 
-  - name: libportal
-    buildsystem: meson
-    config-opts:
-      - -Ddocs=false
-      - -Dvapi=false
-      - -Dtests=false
-      - -Dportal-tests=false
-      - -Dbackend-gtk3=disabled
-      - -Dbackend-gtk4=enabled
-      - -Dbackend-qt5=disabled
-      - -Dbackend-qt6=disabled
-    sources:
-      - type: archive
-        url: https://github.com/flatpak/libportal/archive/0.11.0.tar.gz
-        sha256: 71482afa68b3373268e7df7feaf96ce99eb1a6701f60ff43a0d1b2594605eae8
-        x-checker-data:
-          type: anitya
-          project-id: 230124
-          stable-only: true
-          url-template: https://github.com/flatpak/libportal/archive/$version.tar.gz
-
   - name: boxflat
     buildsystem: simple
     build-commands:
